@@ -8,6 +8,7 @@ main {
     flex: 1 0 auto;
 }
 
+<<<<<<< HEAD
 .back{
     background:linear-gradient(-20deg,#eb01a5, #d13531, #FD7F00, #F9D54A);
     background-size: 300% 300%;
@@ -44,3 +45,10 @@ main {
 #social{
  margin-left: 20px;
 }
+=======
+.welcome{
+    background-image:linear-gradient(#eb01a5, #d13531);;
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+>>>>>>> c9adc7e88174a5e251fcf877d82623c66feb85f5
