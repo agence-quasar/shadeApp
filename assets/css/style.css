@@ -1,0 +1,15 @@
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+.welcome{
+    background-image:linear-gradient(#eb01a5, #d13531);;
+    background-repeat: no-repeat;
+    background-size: auto;
+}
