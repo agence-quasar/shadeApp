@@ -18,18 +18,81 @@ $(document).ready(function() {
     messagingSenderId: "56916114464"
   };
   firebase.initializeApp(config);
-});
-	
+  const database = firebase.database()
+  const provider = new firebase.auth.GoogleAuthProvider();
 
-   let database = firebase.database()
-   dataTest = " coicou ceci est un est "
+    //--------------------------------------
+    //--------------------------------------
+    //--------------- Ab testing  ---------
+    //--------------------------------------
+    //--------------------------------------
 
-document.getElementById('download-button').addEventListener('click',function(myData){
+      // math random 50% de load la table A ou B de la db
 
-	firebase.database().ref('data/' + myData).set({
-	    myData : dataTest
-	  });
+       //let table = A ou B 
+       // afficher layout A ou B en fonction
+    
 
+    //--------------------------------------
+    //--------------------------------------
+    //--------------- partie tracking scroll  ---------
+    //--------------------------------------
+    //--------------------------------------
+
+    //--------------------------------------
+    //--------------------------------------
+    //--------------- partie tracking clic  ---------
+    //--------------------------------------
+    //--------------------------------------
+
+
+
+
+// si la var = A on push dans la tb A
+
+    // recuperation de la date dans la db
+
+      // si la date est la meme on recupere le nombre de clic à cette date 
+
+      // sinon on reinitialise la variable a 0
+       let ctaClic = 0;
+       console.log(ctaClic, 'nombre de clic de base');
+
+
+      document.getElementById('download-button').addEventListener('click',function(){
+        // on incremente la nombre de clic sur le cta 
+        ctaClic++;
+        // si la date est la meme on push le nombre de click
+      	firebase.database().ref('data/' ).set({
+      	    ctaClic
+
+      	  }).then(function () {
+
+            console.log(ctaClic, 'nombre de clic apres')
+        });
+        // sinon on push le nombre de clic + la nouvelle date associé
+        
+
+      });
+
+// si la var = B on push dans la tb B       
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// fin document ready
 });
   
 
