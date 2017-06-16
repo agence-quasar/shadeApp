@@ -15,7 +15,7 @@ h1 {
     font-weight:bold;
 }
 footer{
-    background-color: #82358B!important;
+    background-color: #1c1f3a!important;
 }
 .no-pad-bot figure{
     width: 80%;
@@ -133,4 +133,43 @@ footer{
 
 #myBtn a {
     color: white;
+}
+
+
+.footer-social-icons {
+    width: 350px;
+    display:block;
+    margin: 0 auto;
+}
+
+social-icon {
+    color: #fff;
+}
+ul.social-icons {
+    margin-top: 10px;
+}
+.social-icons li {
+    vertical-align: top;
+    display: inline;
+    height: 100px;
+}
+.social-icons a {
+    color: #fff;
+    text-decoration: none;
+}
+.fa-facebook {
+    padding:10px 13px;
+    border: 1.5px solid #b3b3b3;
+    border-radius: 10%;
+}
+.fa-facebook:hover {
+    border: 1.5px solid #ffffff;}
+
+.fa-twitter {
+    padding:10px 10px;
+    border: 1.5px solid #b3b3b3;
+    border-radius: 10%;
+}
+.fa-twitter:hover {
+    border: 1.5px solid #ffffff;
 }
