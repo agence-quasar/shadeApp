@@ -1,24 +1,16 @@
 $(document).ready(function() {
 
-     // Initialize Firebase
-    const config = {
-        apiKey: "AIzaSyBcTjyNjJodcPEeQQL8B5QYIcBu4zoTpF0",
-        authDomain: "shade-f36ef.firebaseapp.com",
-        databaseURL: "https://shade-f36ef.firebaseio.com",
-        projectId: "shade-f36ef",
-        storageBucket: "shade-f36ef.appspot.com",
-        messagingSenderId: "531659265621"
-      };
+    var config = {
+        apiKey: "AIzaSyDMwAXyNk-mfnTbAbtxff6Vf8wwAjgE2E4",
+        authDomain: "shade-cce4d.firebaseapp.com",
+        databaseURL: "https://shade-cce4d.firebaseio.com",
+        projectId: "shade-cce4d",
+        storageBucket: "shade-cce4d.appspot.com",
+        messagingSenderId: "732348108395"
+    };
     firebase.initializeApp(config);
     const database = firebase.database()
     const provider = new firebase.auth.GoogleAuthProvider();
-
-
-    $('.scrollTo').on('click', function() { // Au clic sur un élément
-        let page = $(this).attr('href'); // Page cible
-        let speed = 800; // Durée de l'animation (en ms)
-        return false;
-    });
 
 
     window.onscroll = function () {scrollFunction ()};
@@ -33,6 +25,9 @@ $(document).ready(function() {
     }
     $('#myBtn').on('click', function(){
             $('html, body').animate({ scrollTop: 0 }, 800);
+    });
+    $('#download-button').on('click', function(){
+            $('html, body').animate({ scrollTop: 800 }, 800);
     });
 
   
@@ -51,7 +46,6 @@ $(document).ready(function() {
                 token = result.credential.accessToken;
                 user = result.user;
                 checkUser(user.uid);
-                displayForm();
                 //createUser(user.uid, user.displayName);
 
 
@@ -71,13 +65,9 @@ $(document).ready(function() {
 
         firebase.database().ref('/users/' + user.uid).once('value').then(function(snapshot) {
             let  data = snapshot.val();
-            console.log(data);
             if (data == null){
-                createUser(user.uid, user.displayName);
+                createUser(user.uid, user.displayName, user.email);
 
-            }
-            if(data.click != null){
-                clicId =  data.click.length
             }
 
 
@@ -85,12 +75,26 @@ $(document).ready(function() {
 
     };
 
-    let createUser = function(userId, name){
+    let createUser = function(userId, name, email){
         firebase.database().ref('users/' + userId).set({
             username: name,
+            mail : user.email
+             
 
         });
-    };
+        
+        let ga = document.createElement('p');
+        let gb = document.getElementById('googleConnect');
+        let gc = document.getElementById('page2');
+        gc.appendChild(ga)
+        ga.innerHTML = "Merci nous avons bien recu votre Email :)";
+        ga.style.textAlign ="center"
+        ga.style.display="block"
+        ga.style.fontWeight ="bold";
+        gb.style.display = "none";
+            
+
+    }
     //--------------------------------------
     //--------------------------------------
     //--------------- partie tracking scroll  
