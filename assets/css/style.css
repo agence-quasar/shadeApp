@@ -28,84 +28,35 @@ footer{
     width: 70%
 }
 
-.slide4{ background-color: #E91E63; 
-    color: white;
-    height: 100vh;
-
-}
-.slide3{ background-color: #42A5F5; 
-    color: white;
-    height: 100vh;
-
-}
-.slide2{ background-color: #00B0FF;
-    width: 100%;
-    padding: 0 7%;
-    display: table;
-    margin: 0;
-    max-width: none;
-    height: 100vh;
-
+.slide2{
+    clear: both;
+    margin: 20px 0;
 }
 .slide2 figure img{
     width: 100%;
 }
+
 .slide2 figure{
-    margin: 0
+    margin: 0;
+    background-image: url(../images/shade-content.jpg);
+    background-size: cover;
+    width: 50%;
+    padding: 32.17% 0 0 0;
+    float: left;
+    margin-right: 20px;
+}
+.slide2 p {
+    margin: 10px 0;
 }
 .slide2 h4{
     margin-top: 0;
     font-weight: bold;
 }
-.slide3 figure img{
-    width: 100%;
-}
-.slide3 figure{
-    margin: 0
-}
-.slide3 h4{
-    margin-top: 0;
-    font-weight: bold;
-}
-.slide4 figure img{
-    width: 100%;
-}
-.slide4 figure{
-    margin: 0
-}
-.slide4 h4{
-    margin-top: 0;
-    font-weight: bold;
-}
-.back{
-    background:linear-gradient(-20deg,#82358B, #E6214B,#15162C, #1F2340);
-    background-size: 300% 300%;
-    position: relative;
+.slide1{;
     width: 100%;
     height: 100vh;
-    line-height: 6;
-    -webkit-animation: animation 30s ease infinite;
-    -moz-animation: animation 30s ease infinite;
-    animation: animation 30s ease infinite;
-
 }
 
-
-@-webkit-keyframes animation {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
-}
-@-moz-keyframes animation {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
-}
-@keyframes animation {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
-}
 
 #pitch{
     text-align: center;
@@ -139,7 +90,9 @@ footer{
     padding: 18.5px 25px;
     border-radius:2%;
 }
-
+.cta{
+    margin-top: 70vh;
+}
 #myBtn a {
     color: white;
 }
@@ -189,4 +142,32 @@ ul.social-icons {
 
 iframe{
     margin: 0 auto;
+}
+.slide1 iframe{
+        width: 100%;
+    height: 100vh;
+    position: absolute;
+}
+@media (max-width: 600px){
+.fixNav{
+    display: none;
+}    
+.slide2 figure{
+    width: 100%;
+    padding: 56.17% 0 0 0;
+    float: none;
+    margin-right: 0;
+}
+.slide2 p {
+    display: inline-block;
+}
+.slide2 h1 {
+    font-size: 2.2rem
+}
+.slide2 h4{
+    font-size: 2rem
+}
+.slide2 p {
+    margin:0;
+}
 }
