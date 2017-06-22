@@ -60,7 +60,9 @@ $(document).ready(function() {
                 console.log(error);
                 // ...
             });
+
         })
+
     let checkUser = function () {
 
         firebase.database().ref('/users/' + user.uid).once('value').then(function(snapshot) {
@@ -70,7 +72,6 @@ $(document).ready(function() {
 
             }
 
-
         });
 
     };
@@ -79,7 +80,6 @@ $(document).ready(function() {
         firebase.database().ref('users/' + userId).set({
             username: name,
             mail : user.email
-             
 
         });
         
