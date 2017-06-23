@@ -9,7 +9,7 @@ $(document).ready(function() {
         messagingSenderId: "732348108395"
     };
     firebase.initializeApp(config);
-    const database = firebase.database()
+    const database = firebase.database();
     const provider = new firebase.auth.GoogleAuthProvider();
 
 
@@ -30,6 +30,8 @@ $(document).ready(function() {
             $('html, body').animate({ scrollTop: 800 }, 800);
     });
 
+
+
   
   
 
@@ -40,12 +42,25 @@ $(document).ready(function() {
     //--------------------------------------
     //--------------------------------------
 
+
     document.getElementById('googleConnect').addEventListener("click", function(){
             firebase.auth().signInWithPopup(provider).then(function(result) {
 
                 token = result.credential.accessToken;
                 user = result.user;
+
                 checkUser(user.uid);
+                $.ajax({
+                    url : "./test.php", // the resource where youre request will go throw
+                    type : "PUT", // HTTP verb
+                    data : {
+                        email: user.email,
+                        name: user.displayName
+                    },
+                    success: function(result){
+                        console.log("reussi");
+                    }
+                });
                 //createUser(user.uid, user.displayName);
 
 
@@ -61,7 +76,7 @@ $(document).ready(function() {
                 // ...
             });
 
-        })
+        });
 
     let checkUser = function () {
 
@@ -86,15 +101,21 @@ $(document).ready(function() {
         let ga = document.createElement('p');
         let gb = document.getElementById('googleConnect');
         let gc = document.getElementById('page2');
-        gc.appendChild(ga)
+        gc.appendChild(ga);
         ga.innerHTML = "Merci nous avons bien recu votre Email :)";
-        ga.style.textAlign ="center"
-        ga.style.display="block"
+        ga.style.textAlign ="center";
+        ga.style.display="block";
         ga.style.fontWeight ="bold";
         gb.style.display = "none";
-            
 
-    }
+    };
+
+
+
+
+
+
+
     //--------------------------------------
     //--------------------------------------
     //--------------- partie tracking scroll  
