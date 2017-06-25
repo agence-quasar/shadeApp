@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="robots" content="index, follow, archive"/>
@@ -13,9 +13,11 @@
     <meta name="description"
           content="Shade est la première application de rencontre qui se fait uniquement sur présentation d’une photo d’une partie de son corps (yeux, bouche, main etc..) Nous mettons en avant le concept de découverte de l’autre."/>
     <title>Shade | Découvrez votre corps et ceux des autres. </title>
-    <link rel="stylesheet" href="./materialize/css/materialize.min.css">
+    <link rel="stylesheet" href="./assets/fonts/damion/damion.css">
+    <link rel="stylesheet" href="./assets/fonts/damion/damion.css">
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
     <link rel="apple-touch-icon" sizes="57x57" href="./assets/images/favicon/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="./assets/images/favicon/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="./assets/images/favicon/apple-icon-72x72.png">
@@ -70,109 +72,200 @@
 
 </head>
 <body>
-<!-- Google Tag Manager (noscript) -->
+
+<div id="overlay-video">
+    <iframe id="iframeVideo" type="text/html" width="720" height="405"
+            src="https://www.youtube.com/watch?time_continue=1&v=FORie0Fl_E0"
+            frameborder="0" allowfullscreen>
+    </iframe>
+    <div id="overlay-close">
+        <a href="#" title="Fermer">
+            <img src="./assets/images/close.png" alt="Fermer"/>
+        </a>
+    </div>
+</div>
+
 <noscript>
     <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K2FNDR5"
             height="0" width="0" style="display:none;visibility:hidden"></iframe>
 </noscript>
 
+<header>
+    <div class="menu_open">
+        <a href="javascript:void(0)"><img id="logo" class="btn_open" src="./assets/images/logo_rouge.png" alt="Shade"/></a>
+    </div>
 
-<section class="slide1" id="page1">
+    <div class="overlay">
+        <ul>
+            <li><a href="#">Découvrir Shade</a></li>
+            <li><a href="#newsletter">Devenir Shaders</a></li>
+            <li><a href="#temoignage">Entre nous</a></li>
+            <li><a href="#video">L'expérience</a></li>
+        </ul>
+    </div>
 
-    <div class="row">
-        <img src="./assets/images/Fond3.png" id="fond2" alt="fond2">
+    <ul class="menu">
+        <li><a href="#Shade" class="link">Découvrir Shade</a></li>
+        <li><a href="#newsletter" class="link">Devenir Shaders</a></li>
+        <li><a href="#temoignage" class="link">Entre nous</a></li>
+        <li><a href="#video" class="link">L'expérience</a></li>
+    </ul>
+</header>
 
+<main>
+    <div class="logo_shade">
+        <img src="./assets/images/logo_shade.png" alt="">
+    </div>
+    <h1>La première application de <a href="#" class="typewrite" data-period="2000" data-type='[ "Fantasme."]'>
+        <span class="wrap"></span>
+    </a></h1>
+    <p>Commencez l'expérience</p>
+    <div class="arrow bounce"><a href="#discover" class="js-scrollTo"><i class="fa fa-angle-down fa-5x"
+                                                                         aria-hidden="true"></i></a></div>
+</main>
+
+<nav class="barre"></nav>
+
+<section id="discover">
+    <div class="feature-block">
+        <div class="block">
+            <h2>DÉCOUVREZ SHADE</h2>
+        </div>
+        <figure><img src="./assets/images/lips.jpg"/></figure>
+        <div class="body-text">
+            <p>La première application dont le concept est la découverte de l’autre à
+
+                travers des photos érotiques, de façon innovante et décomplexée. Elle
+
+                permettra de choisir quelle(s) partie(s) du corps l’utilisateur préfère chez
+
+                ses partenaires de jeu, tout en lui proposant de mettre en avant ses plus
+
+                beaux atouts. Shade sera l’intermédiaire entre les utilisateurs et leurs
+
+                fantasmes (in)avouables.</p>
+        </div>
     </div>
 
 
-    <div class="row">
-        <img src="./assets/images/Fond1.jpg" id="fond" alt="fond">
-    </div>
-
-
-</section>
-
-<article class="row container">
-    <h1 class="center">Shade, la nouvelle application de partage sans complexe</h1>
-
-    <article class="col s12">
-        <figure>
-        </figure>
-        <h4>Exposer ce que vous avez de plus beau</h4>
-        <p> Shade est la première application dont le concept est la découverte de l’autre à travers son corps, de façon
-            innovante et décomplexée. Assumez enfin vos fantasmes et soyez à l'aise avec votre corps. Choisissez ce que
-            vous préférez chez vos partenaires de jeu, et mettez en avant vos plus beaux atouts. Participez à une
-            expérience d'un nouveau genre, sensuelle, qui pimentera votre quotidien.
-        </p>
-        <p>Devenez un des premiers Shaders en vous inscrivant à la newsletter, et profitez d'un accès illimité à toute
-            l'application.</p>
-        <br>
-
-        <form id="pfb-signup-submission" method="post">
-            <a class="btn-large waves-effect waves-light darken-4" id="googleConnect">S'inscrire à la newletter
-            </a>
-        </form>
-
-    </article>
-
-
-    <section class="slide">
-        <article class="row">
-            <div class="col s12">
-                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScvukNUXkX3Cu4kXX946ocbvPFz7t-SuHS_cs3DDJ1oGIMQXQ/viewform?embedded=true"
-                        width="100%" height="500px" frameborder="0">Chargement en cours...
-                </iframe>
+    <div class="feature-block inverted">
+        <div class="feature-block">
+            <div class="block">
+                <h2>VOTRE CORPS PARLE POUR VOUS</h2>
             </div>
+            <figure><img src="./assets/images/breast.jpg"/></figure>
+            <div class="body-text">
+                <p>Ce qui nous différencie les uns des autres, ce sont nos
+
+                    goûts or certains fantasmes sont difficiles à assumer par
+
+                    peur d’être jugés. Shade permet de contrer cette
+
+                    tendance. Cette application est destinée à décomplexer
+
+                    les personnes et les mettre à l’aise avec leur sensualité et
+
+                    celle des autres.</p>
+            </div>
+        </div>
+</section>
+<section id="discoverbis">
+    <div class="feature-block">
+        <div class="block">
+            <h2>Tout le monde peut se sentir libre
+
+                de communiquer sur ses fantasmes.</h2>
+        </div>
+        <figure><img src="./assets/images/hand.jpeg"/></figure>
+        <div class="body-text">
+            <h2></h2>
+        </div>
+    </div>
+
+    <section id="stat">
+        <article id="stat_layout" class="wrapper">
+            <div class="bloc"><h1>70%</h1>
+                <p>Des femmes <br>sont compléxées</p></div>
+            <div class="bloc"><h1>74%</h1>
+                <p>Des gens envoient <br>des photos coquines</p></div>
+            <div class="bloc"><h1>90%</h1>
+                <p>Des personnes sont <br>à l'aise avec leur sexualité</p></div>
         </article>
     </section>
 
-
-    <a href="#back" class="scrollTo">
-        <button id="myBtn" title="Go to top"><i class="fa fa-arrow-up" aria-hidden="true"></i>
-        </button>
-    </a>
-
-
-    <footer class="page-footer">
-
-        <section class="container">
-            <div class="row">
-                <div class="col l6 s12">
-
-                    <object data="./assets/images/logo-blanc.svg"
-                            width="100"
-                            height="45"
-                            type="image/svg+xml">
-                    </object>
-                    <p class="grey-text text-lighten-4">Votre corps parle pour vous</p>
-                    <div class="col l6 s12 footer-social-icons">
-                        <ul class="social-icons">
-                            <li><a href="https://www.facebook.com/Shadeappli/" target="_blank" class="social-icon"> <i
-                                    class="fa fa-facebook"></i></a></li>
-                            <li><a href="#" class="social-icon"> <i class="fa fa-twitter"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
+    <section id="newsletter">
+        <p class="wrapper">Devenez un des premiers Shaders en vous inscrivant à la newsletter,
+            <br>
+            vous serez informé du lancement de l'application en avant-première !</p>
 
 
-            </div>
-        </section>
+        <form id="pfb-signup-submission" method="post">
+            <a class="wrapper" id="googleConnect">S'inscrire à la Newsletter</a>
+        </form>
 
-        <section class="footer-copyright">
-            <div class="container">
-                © 2017 Shade App - <a href="mentionslegales.html" class="mentions">mentions légales</a>
-                <span class="grey-text text-lighten-4 right" href="#!">Made with <i class="fa fa-heart"
-                                                                                    aria-hidden="true"></i>
 
-                from Quasar-agency</span>
-            </div>
-        </section>
-    </footer>
+    </section>
+
+    <section id="temoignage">
+        <article id="temoignage_layout" class="wrapper">
+            <div class="bloc2 wrapper">
+                <p>Il y a quelques semaines,
+
+                    j'ai rencontré sur le net
+
+                    un homme qui m'a révélé
+
+                    être fétichiste des pieds,
+
+                    j'avoue que ça m'intrigue. <br><br><span class="highlight"> - Céline 28 ans</span></p></div>
+            <div class="bloc2 wrapper">
+                <p>Ce que j’aime le plus
+
+                    chez une femme c’est
+
+                    sa bouche, lorsque je la
+
+                    regarde je ne peux
+
+                    m’empêcher de penser
+
+                    à tout ce qu’elle pourrait
+
+                    faire avec...<br><br><span class="highlight"> - Thomas 33 ans</span></p></div>
+            <div class="bloc2 wrapper">
+                <p>J’adore le regard chez
+
+                    un homme, c’est le
+
+                    meilleur moyen de
+
+                    commencer un jeu de
+
+                    séduction !<br><br><span class="highlight"> - Tiffany 22 ans</span></p></div>
+        </article>
+    </section>
+
+    <section id="video">
+        <article id="video_layout" class="wrapper">
+            <h1>Découvrez notre <br>
+
+                vidéo Teaser </h1>
+            <a href="javascript:void(0)" title="Play video" id="vide" class="play">
+            </a>
+
+
+        </article>
+
+    </section>
+
     <script src="https://www.gstatic.com/firebasejs/4.1.2/firebase.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="https://apis.google.com/js/platform.js" async defer></script>
-    <script type="text/javascript" src="./materialize/js/materialize.min.js"></script>
     <script type="text/javascript" src="./assets/js/script.js"></script>
+    <script type="text/javascript" src="./assets/js/anim.js"></script>
+    <script type="text/javascript" src="./assets/js/video.js"></script>
+    <script type="text/javascript" src="./assets/js/overlay.js"></script>
+
     <script>
         $(".button-collapse").sideNav();
     </script>
