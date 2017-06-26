@@ -754,6 +754,20 @@ FOOTER
 }
 
 
+@media all and (max-width: 414px) {
+
+    main .logo_shade {
+        text-align: center;
+        padding-top: 8em;
+    }
+
+    .arrow {
+        position: absolute;
+        bottom: 3em;
+
+    }
+
+}
 @media all and (max-width: 320px) {
 
 
@@ -981,7 +995,11 @@ FOOTER
         padding: 2em;
     }
     .arrow {
-        bottom: 5em;
+        bottom: 2em;
+    }
+
+    main .logo_shade {
+        padding-top: 11em;
     }
 
 }
