@@ -980,6 +980,11 @@ FOOTER
     #discover {
         height: 95vh;
     }
+    #stat {
+        background-color: #260024;
+        height: 76vh;
+        width: 100%;
+    }
 }
 
 
