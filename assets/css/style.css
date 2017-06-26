@@ -302,7 +302,7 @@ SECTIONS LAYOUT
     background-color: #fff;
     height: 140vh;
     width: 100%;
-    padding-top: 2em;
+    padding-top: 17em;
 }
 
 
@@ -713,8 +713,7 @@ FOOTER
     }
 
     #discover{
-        height: 193vh;
-
+        height: 201vh;
     }
 
     #stat_layout {
@@ -730,6 +729,7 @@ FOOTER
 
     #newsletter{
         margin-top: 75vh;
+        height: 80vh;
     }
 
     #temoignage{
@@ -745,6 +745,99 @@ FOOTER
     }
 
 }
+
+
+@media all and (max-width: 320px) {
+
+
+    #discoverbis {
+        padding-top: 36em;
+    }
+    #discover {
+        height: 155vh;
+    }
+
+    #stat_layout {
+        margin-top: 10em;
+    }
+
+    #newsletter {
+        margin-top: 103vh;
+        height: 111vh;
+    }
+
+    #temoignage_layout {
+
+        margin-top: 0em;
+    }
+
+    main .logo_shade {
+
+        padding-top: 6em;
+    }
+
+    .fa-5x {
+
+        padding-top: 1em;
+    }
+
+    .body-text p {
+        padding-top: 2em;
+    }
+    figure {
+        width: 100%;
+    }
+
+    figure {
+        float: left;
+        width: 47%;
+    }
+
+    .body-text {
+        clear: both;
+    }
+
+    .inverted .block {
+        float: left;
+    }
+
+    .inverted figure {
+        float: right;
+    }
+
+    #newsletter p {
+        color: #ffffff;
+        /* text-align: justify; */
+        font-family: 'nunitoregular';
+        font-size: 1.5em;
+        width: 83%;
+        /* padding: 4em; */
+        padding-bottom: 1em;
+    }
+
+    figure {
+        float: left;
+        width: 100%;
+    }
+
+
+
+}
+
+@media all and (max-width: 320px) {
+
+
+    #newsletter p {
+        color: #ffffff;
+        text-align: center;
+        font-family: 'nunitoregular';
+        font-size: 1.5em;
+        width: 83%;
+        padding: 1em;
+        padding-bottom: 1em;
+    }
+}
+
 @media all and (min-width: 28em) {
     .block {
         float: right;
@@ -789,7 +882,97 @@ FOOTER
     }
 }
 
+@media all and (max-width: 375px) {
 
+    #discover {
+        height: 240vh;
+    }
+    #newsletter p {
+        color: #ffffff;
+        text-align: justify;
+        font-family: 'nunitoregular';
+        font-size: 1.5em;
+        width: 60%;
+        padding: 1em;
+    }
+
+    main .logo_shade {
+        text-align: center;
+        padding-top: 8em;
+    }
+
+    .arrow {
+        position: absolute;
+        bottom: 2em;
+        left: 50%;
+        margin-left: -20px;
+        width: 40px;
+        height: 60px;
+        color: #fff;
+    }
+
+    .body-text p {
+        font-family: 'nunitoregular';
+        font-size: 1em;
+        padding-right: 2em;
+        padding-top: 2em;
+    }
+
+}
+
+
+@media all and (max-width: 412px) {
+
+    main {
+        background: url(./images/fond.jpg) no-repeat center center / cover;
+        height: 120vh;
+        width: 100%;
+        margin-top: -10em;
+    }
+    .arrow {
+        position: absolute;
+        bottom: 0em;
+        left: 50%;
+        margin-left: -20px;
+        width: 40px;
+        height: 60px;
+        color: #fff;
+    }
+
+    .body-text p {
+        font-family: 'nunitoregular';
+        font-size: 1em;
+        padding-right: 2em;
+        padding-top: 2em;
+    }
+
+    #discoverbis {
+        background-color: #fff;
+        height: 140vh;
+        width: 100%;
+        padding-top: 21em;
+    }
+
+    #newsletter p {
+        color: #ffffff;
+        text-align: justify;
+        font-family: 'nunitoregular';
+        font-size: 1.5em;
+        width: 60%;
+        padding: 2em;
+    }
+    .arrow {
+        bottom: 5em;
+    }
+
+}
+
+
+@media (min-width: 768px){
+    #discover {
+        height: 95vh;
+    }
+}
 
 
 
