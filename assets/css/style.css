@@ -149,7 +149,7 @@ main{
 
 main .logo_shade{
     text-align: center;
-    padding-top: 13em;
+    padding-top: 19em;
 }
 
 main h1{
@@ -213,7 +213,7 @@ main p{
 
 .arrow {
     position: absolute;
-    bottom: 6em;
+    bottom: 3em;
     left: 50%;
     margin-left: -20px;
     width: 40px;
