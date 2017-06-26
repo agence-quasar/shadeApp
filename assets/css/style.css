@@ -835,6 +835,10 @@ FOOTER
         justify-content: center;
     }
 
+    .overlay ul li a {
+        font-size: 2em;
+    }
+
 
 
 }
