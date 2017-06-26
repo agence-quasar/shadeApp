@@ -400,6 +400,8 @@ figure img{
     height: 70vh;
     width: 100%;
     text-align: center;
+
+
 }
 
 #newsletter p{
@@ -408,7 +410,10 @@ figure img{
     font-family:'nunitoregular';
     font-size: 1.5em;
     width: 60%;
-    padding: 4em;
+
+
+    padding-left: 10%;
+    padding-bottom: 2em;
 
 }
 
