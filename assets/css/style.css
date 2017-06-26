@@ -198,6 +198,7 @@ main p{
     background-color: #CF2034;
     content: "";
     transform: translate3d(0,100%,0);
+    transition: all .3s;
     z-index:-1;
 }
 
