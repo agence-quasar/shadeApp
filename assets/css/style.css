@@ -821,8 +821,14 @@ FOOTER
         float: left;
         width: 100%;
     }
-
-
+    .overlay ul {
+        width: 100%;
+        height: 100%;
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
 
 }
 
