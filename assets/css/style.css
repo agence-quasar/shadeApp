@@ -1006,13 +1006,13 @@ FOOTER
 }
 
 
-@media (min-width: 768px){
+@media (max-width: 768px){
     #discover {
         height: 95vh;
     }
     #stat {
         background-color: #260024;
-        height: 76vh;
+        height: 109h;
         width: 100%;
     }
 }
