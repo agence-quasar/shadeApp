@@ -358,18 +358,24 @@ figure img{
 #picto_layout{
     background-color: #fff;
     height: 55vh;
-    width: 100%;
+    max-width: 62%;
     display: flex;
 }
 
 #picto_layout .bloc{
     width: 280px;
     height: 300px;
-    margin-top: 0em;
+    left: 1em;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+#picto_layout p{
+    text-align: center;
+    font-family: 'nunitobold';
+    font-size: 1.5em;
 }
 
 #stat{
@@ -400,11 +406,18 @@ figure img{
     font-size: 1.5em;
 }
 
+
+
+
 .wrapper{
     max-width: 970px;
     margin: 0 auto;
 }
 
+.wrapper_layout {
+    max-width: 970px;
+    margin: 0 auto;
+}
 
 .bloc{
     width: 280px;
@@ -471,8 +484,9 @@ figure img{
     display: flex;
     justify-content: space-between;
     margin-top: 4em;
-
+    padding-top: 1em;
 }
+
 
 .bloc2{
     width: 280px;
@@ -828,6 +842,12 @@ footer{
         align-items: center;
     }
 
+    #picto_layout {
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+    }
+
 }
 
 
@@ -840,7 +860,7 @@ footer{
 
     .arrow {
         position: absolute;
-        bottom: 3em;
+        bottom: -6em;
 
     }
 
@@ -878,7 +898,7 @@ footer{
 
     #temoignage_layout {
 
-        margin-top: 0em;
+        margin-top: 4em;
     }
 
     main .logo_shade {
