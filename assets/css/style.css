@@ -7,7 +7,6 @@ body{
 }
 a{
     text-decoration: none;
-    text-decoration: none;
 }
 
 /**********
@@ -297,15 +296,22 @@ SECTIONS LAYOUT
 
 #discover{
     background-color: #fff;
-    height: 140vh;
+    height: 100%;
     width: 100%;
     padding-top: 10em;
 }
+
+#discover h1{
+    text-align: center;
+    font-family: 'nunitobold';
+    font-size: 2.5em;
+    color: #e6214b;
+}
 #discoverbis{
     background-color: #fff;
-    height: 140vh;
+    height: 60vh;
     width: 100%;
-    padding-top: 17em;
+    padding-top: .1em;
 }
 
 
@@ -347,6 +353,23 @@ figure img{
 .feature-block {
     padding: 0 1em 2em;
     overflow: hidden; /* clearfix */
+}
+
+#picto_layout{
+    background-color: #fff;
+    height: 55vh;
+    width: 100%;
+    display: flex;
+}
+
+#picto_layout .bloc{
+    width: 280px;
+    height: 300px;
+    margin-top: 0em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 #stat{
@@ -407,13 +430,8 @@ figure img{
 
 #newsletter p{
     color: #ffffff;
-    text-align: justify;
     font-family:'nunitoregular';
     font-size: 1.5em;
-    width: 60%;
-
-
-    padding-left: 10%;
     padding-bottom: 2em;
 
 }
@@ -485,9 +503,8 @@ figure img{
 .bloc2:hover{
     transform: scale(1.1);
     box-shadow: 0 0 21px rgba(33,33,33,.5);
-
-
 }
+
 .highlight{
     font-family: 'nunitobold';
     color:#CF2034;
@@ -690,12 +707,72 @@ OVERLAY MENU
 /**********
 FOOTER
 ***********/
+footer{
+    background-color: #15162c;
+    height: 45vh;
+    width: 100%;
+}
 
+.column {
+    float: left;
+    padding: 15px;
+}
 
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
 
+.content {
+    width: 50%;
+    padding-left: 10%;
+    font-family:'nunitoregular';
+    color: #fff;
+}
+.column ul {
+    margin-left: -37px;
 
+}
+.column li {
+    float: left;
+    padding-left: 1em;
+    list-style-type: none;
+}
 
+.column2{
+    float: right;
+    padding: 15px;
+}
 
+.column2 li{
+    list-style-type: none;
+    padding: 20px;
+    margin-right: 8em;
+    color: #fff;
+    font-family: 'nunitoregular';
+    font-size: 1em;
+}
+
+.column2 li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.column_content{
+    float: left;
+    line-height: 1em;
+    margin-right: .9em;
+}
+
+.column_content1{
+    float: left;
+    line-height: 1em;
+}
+
+.column_social a{
+    color: #ffffff;
+}
 
 /**********
  RESPONSIVE LAYOUT
@@ -721,7 +798,7 @@ FOOTER
     }
 
     #discover{
-        height: 201vh;
+        height: 100%;
     }
 
     #stat_layout {
@@ -759,7 +836,7 @@ FOOTER
 
     main .logo_shade {
         text-align: center;
-        padding-top: 8em;
+        padding-top: 21em;
     }
 
     .arrow {
@@ -768,11 +845,17 @@ FOOTER
 
     }
 
+
     #discoverbis {
-        padding-top: 53em;
+        background-color: #fff;
+        height: 83vh;
+        width: 100%;
+        padding-top: .1em;
     }
 
-
+    #discover {
+        height: 100%;
+    }
 
 }
 @media all and (max-width: 320px) {
@@ -782,7 +865,7 @@ FOOTER
         padding-top: 36em;
     }
     #discover {
-        height: 155vh;
+        height: 100%;
     }
 
     #stat_layout {
@@ -860,8 +943,6 @@ FOOTER
         font-size: 2em;
     }
 
-
-
 }
 
 @media all and (max-width: 320px) {
@@ -925,7 +1006,7 @@ FOOTER
 @media all and (max-width: 375px) {
 
     #discover {
-        height: 240vh;
+        height: 100%;
     }
     #newsletter p {
         color: #ffffff;
@@ -958,6 +1039,9 @@ FOOTER
         padding-top: 2em;
     }
 
+    .discover{
+        height: 100%;
+    }
 }
 
 
@@ -988,10 +1072,11 @@ FOOTER
 
     #discoverbis {
         background-color: #fff;
-        height: 140vh;
+        height: 85vh;
         width: 100%;
-        padding-top: 74em;
+        padding-top: 0em;
     }
+
 
     #newsletter p {
         color: #ffffff;
@@ -1014,7 +1099,7 @@ FOOTER
 
 @media (max-width: 768px){
     #discover {
-        height: 95vh;
+        height: 100%;
     }
     #stat {
         background-color: #260024;
@@ -1022,12 +1107,6 @@ FOOTER
         width: 100%;
     }
 }
-
-
-
-
-
-
 
 
 
