@@ -66,7 +66,7 @@ FONTS
 HEADER
 ***********/
 header {
-    height: 15vh;
+    height: 10vh;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -74,12 +74,14 @@ header {
     width: 100%;
     left: 0;
     z-index: 30;
+    position: fixed;
+    background-color: #1F2340;
 }
 
 
 #logo {
     position: fixed;
-    top: 4%;
+    top: 2%;
     left: 10%;
     width: 30px;
     height: auto;
@@ -103,6 +105,7 @@ MENU
 
     -webkit-flex-flow: row wrap;
     justify-content: flex-end;
+    
 }
 
 .menu a {
@@ -800,6 +803,10 @@ footer{
 
     ul.menu{
         display: none;
+    }
+    
+    header{
+        background-color: transparent;
     }
 }
 
