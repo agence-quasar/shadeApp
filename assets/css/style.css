@@ -722,7 +722,7 @@ FOOTER
 ***********/
 footer{
     background-color: #15162c;
-    height: 45vh;
+    height: 20em;
     width: 100%;
 }
 
@@ -889,6 +889,7 @@ footer{
 
     #stat_layout {
         margin-top: 10em;
+        height: 100%;
     }
 
     #newsletter {
@@ -1127,7 +1128,7 @@ footer{
     }
     #stat {
         background-color: #260024;
-        height: 109h;
+        height: 100%
         width: 100%;
     }
 }
