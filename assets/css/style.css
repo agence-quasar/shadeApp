@@ -726,8 +726,9 @@ FOOTER
 ***********/
 footer{
     background-color: #15162c;
-    height: 20em;
     width: 100%;
+    height: 100%;
+    overflow: hidden;
 }
 
 .column {
@@ -759,7 +760,7 @@ footer{
 
 .column2{
     float: right;
-    padding: 15px;
+    padding: 49px 29px;
 }
 
 .column2 li{
@@ -789,6 +790,14 @@ footer{
 
 .column_social a{
     color: #ffffff;
+}
+
+
+
+.container{
+    background-color: #fff;
+    padding: 50px;
+    font-family: 'nunitoregular';
 }
 
 /**********
@@ -1075,6 +1084,12 @@ footer{
         padding: 0 2em 2em;
         overflow: hidden;
     }
+
+    footer{
+        height: 200em;
+    }
+
+
 }
 
 
@@ -1139,6 +1154,21 @@ footer{
         height: 100%
         width: 100%;
     }
+}
+
+@media all and (max-width: 1035px) {
+
+    footer{
+        height: 100%;
+    }
+
+    .content{
+        width: 337px;
+        padding-left: 18px;
+        text-align: justify;
+    }
+
+
 }
 
 
