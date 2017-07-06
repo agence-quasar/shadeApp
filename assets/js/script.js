@@ -8,10 +8,10 @@ $(document).ready(function() {
         storageBucket: "shade-cce4d.appspot.com",
         messagingSenderId: "732348108395"
     };
+
     firebase.initializeApp(config);
     const database = firebase.database();
     const provider = new firebase.auth.GoogleAuthProvider();
-
 
 
     function scrollFunction() {
